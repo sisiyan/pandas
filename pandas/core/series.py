@@ -224,6 +224,10 @@ class Series(base.IndexOpsMixin, generic.NDFrame):
         The name to give to the Series.
     copy : bool, default False
         Copy input data.
+        If False, the memory location for the values is shared and thus
+        a `view` on the input data will be returned.
+        If True, the memory location for the values is not shared, and a `copy`
+        of the input data will be returned.
 
     Examples
     --------
