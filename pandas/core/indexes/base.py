@@ -3791,6 +3791,10 @@ class Index(IndexOpsMixin, PandasObject):
         Parameters
         ----------
         target : an iterable
+        method : {None, ‘backfill’/’bfill’, ‘pad’/’ffill’, ‘nearest’}
+        level :
+        limit :
+        tolerance :
 
         Returns
         -------
