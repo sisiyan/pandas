@@ -3792,7 +3792,9 @@ class Index(IndexOpsMixin, PandasObject):
         ----------
         target : an iterable
         method : {None, ‘backfill’/’bfill’, ‘pad’/’ffill’, ‘nearest’}
-        level :
+        level : int or name
+                Broadcast across a level, matching Index values on
+                the passed MultiIndex level.
         limit :
         tolerance :
 
