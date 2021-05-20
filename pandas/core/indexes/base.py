@@ -3795,7 +3795,8 @@ class Index(IndexOpsMixin, PandasObject):
         level : int or name
                 Broadcast across a level, matching Index values on
                 the passed MultiIndex level.
-        limit :
+        limit : int, default None
+                Maximum number of consecutive elements to forward or backward fill.
         tolerance :
 
         Returns
