@@ -3797,7 +3797,10 @@ class Index(IndexOpsMixin, PandasObject):
                 the passed MultiIndex level.
         limit : int, default None
                 Maximum number of consecutive elements to forward or backward fill.
-        tolerance :
+        tolerance : optional
+            Maximum distance between original and new labels for inexact
+            matches. The values of the index at the matching locations must
+            satisfy the equation ``abs(index[indexer] - target) <= tolerance``.
 
         Returns
         -------
